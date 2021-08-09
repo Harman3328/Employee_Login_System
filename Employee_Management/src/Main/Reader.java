@@ -13,7 +13,7 @@ public class Reader {
     /**
      * reads file and stores the ids in a unique set
      */
-    public void setIds() {
+    public synchronized void setIds() {
         try {
             Scanner scanner = new Scanner(new File("ids.txt"));
             while (scanner.hasNextLine()) {
@@ -28,7 +28,7 @@ public class Reader {
     /**
      * reads file main.txt and stores the ids as keys and passwords as values in a hashtable
      */
-    public void setIp() {
+    public synchronized void setIp() {
         try {
             Scanner scanner = new Scanner(new File("main.txt"));
             while (scanner.hasNext()) {

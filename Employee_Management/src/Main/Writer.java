@@ -3,9 +3,6 @@ package Main;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Set;
 
 public class Writer {
 
@@ -14,7 +11,7 @@ public class Writer {
      * @param contents
      * @throws IOException
      */
-    public static void WriteFile(String contents) {
+    public static synchronized void WriteFile(String contents) {
        try {
            BufferedWriter writer = new BufferedWriter(new FileWriter("main.txt",true));
            writer.write(contents);

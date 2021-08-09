@@ -26,7 +26,6 @@ public class Sign_Up implements Message {
         JFrame jFrame = new JFrame();
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         FlowLayout flowLayout = new FlowLayout();
-        GridLayout gridLayout = new GridLayout(4,1);
         jFrame.setLayout(flowLayout);
         jFrame.setTitle("Sign_Up");
         jFrame.setSize(500, 300);
